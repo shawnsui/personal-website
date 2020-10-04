@@ -270,17 +270,23 @@
   justify-content: space-between;
 }
 
-.book-cover {
-  height: 20rem;
-}
+.book {
+  a.book {
+    text-decoration: none;
+  }
 
-.book-author {
-  margin-top: 0;
-  text-decoration: none;
-}
+  .book-cover {
+    height: 20rem;
+  }
 
-.book-title {
-  margin-bottom: 0;
+  .book-author {
+    margin-top: 0;
+    text-decoration: none;
+  }
+
+  .book-title {
+    margin-bottom: 0;
+  }
 }
 
 // Footer
