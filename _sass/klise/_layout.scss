@@ -264,6 +264,25 @@
   }
 }
 
+.book-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.book-cover {
+  height: 20rem;
+}
+
+.book-author {
+  margin-top: 0;
+  text-decoration: none;
+}
+
+.book-title {
+  margin-bottom: 0;
+}
+
 // Footer
 .footer {
   margin-top: 8em;
@@ -325,7 +344,6 @@
     color: $text-link-blue-active;
   }
 }
-
 
 .search-article {
   position: relative;

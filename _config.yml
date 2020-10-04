@@ -5,20 +5,18 @@ description: >- # site description
 lang: en-US # default lang
 timezone: Asia/Jakarta # set your timezone
 image: assets/img/ogp.png # This image used for Open Graph more info https://ogp.me/
-repo: https://github.com/piharpi/jekyll-klise # site repo [optional]
+repo: https://github.com/shawnsui/personal-website # site repo [optional]
 mode: dark # default theme "dark" | "light"
 
 # Profile settings
 author:
   name: Shawn Sui # author name
-  bio: >- # tell to the world
-    Engineer in the making!
-  username: username # general username
+  username: shawnsui # general username
   github: shawnsui # github username
   twitter: twitter_username # twitter username
   facebook: facebook_username # facebook username
   email: shawnsui@hey.com # email adress
-  avatar: /assets/img/avatar.jpeg # change with your own avatar
+  avatar: /assets/img/avatar.jpg # change with your own avatar
 
 # URL settings
 url: "https://shawnsui.com" #
@@ -77,8 +75,6 @@ exclude:
   - CHANGELOG.md
   - README.md
   - node_modules
-  - CODE_OF_CONDUCT.md
-  - CONTRIBUTING.md
   - lighthouse.png
   - klise-*.gem
   - klise.gemspec

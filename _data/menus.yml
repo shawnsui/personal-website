@@ -1,6 +1,6 @@
-# - title: home
-#   url: /
-#   external: false
+- title: home
+  url: /
+  external: false
 # - title: archive
 #   url: /archive/
 #   external: false
@@ -8,7 +8,6 @@
 #   url: /about/
 #   external: false # set true if you using external link, see below
 
-# Example:
-# - title: github
-#   url: https://github.com/piharpi/jekyll-klise
-#   external: true
+- title: github
+  url: https://github.com/shawnsui
+  external: true

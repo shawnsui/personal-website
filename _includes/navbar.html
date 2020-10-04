@@ -1,7 +1,6 @@
 <div class="navbar" role="navigation">
   <nav class="menu">
     <input type="checkbox" id="menu-trigger" class="menu-trigger" />
-    <script src="/assets/js/main.js" defer="defer"></script>
     <label for="menu-trigger">
       <span class="menu-icon">
         <svg
@@ -246,14 +245,18 @@
           >{{ menu.title }}</a
         >
         {%- else -%}
-        <a class="menu-link" href="{{ menu.url }}">{{ menu.title }}</a>
+        <a class="menu-link" href="{{ menu.url }}" target="_blank"
+          >{{ menu.title }}</a
+        >
         {%- endif -%} {%- endif -%} {%- endfor -%} {%- else -%}
-        <!-- <a class="menu-link {% if url == '/' %}active{% endif %}" href="/"
+        <a class="menu-link {% if url == '/' %}active{% endif %}" href="/"
           >home</a
         >
-        <a class="menu-link {% if url == '/about/' %}active{% endif %}" href="/about">about</a>
         {%- endif -%}
-        <a class="menu-link rss" href="/feed.xml">
+        <a class="menu-link" href="/assets/docs/resume.pdf" target="_blank"
+          >resume</a
+        >
+        <!-- <a class="menu-link rss" href="/feed.xml">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="17"
