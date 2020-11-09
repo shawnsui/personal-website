@@ -5,20 +5,21 @@ home: true
 
 <h2 class="posts-item-note" aria-label="Books!">Books That I'm Reading Now</h2>
 <div class="book-list">
-  {% assign sorted-posts = site.posts | where: "tag","book" %} {% for post in
-  sorted-posts limit: 5 %}
-  <div class="book">
-    <a href="{{ post.goodreads }}">
-      <img
-        class="book-cover"
-        src="/assets/img/book-covers/{{ post.image }}"
-        alt="{{post.title}}"
-      />
-      <p class="book-title">{{ post.title | escape }}</p>
-      <p class="book-author">{{ post.book-author | escape }}</p>
-    </a>
-  </div>
-  {% endfor %}
+  {% assign books = site.posts | where: "category","book" %} 
+  {% assign books_in_progress = site.posts | where: "status","reading"  %}
+    {% for post in books_in_progress limit: 5 %}
+      <div class="book">
+        <a href="{{ post.goodreads }}">
+          <img
+            class="book-cover"
+            src="/assets/img/book-covers/{{ post.image }}"
+            alt="{{post.title}}"
+          />
+          <p class="book-title">{{ post.title | escape }}</p>
+          <p class="book-author">{{ post.book-author | escape }}</p>
+        </a>
+      </div>
+      {% endfor %}
 </div>
 
 <!-- <h3 class="posts-item-note" aria-label="Recent Posts">Recent Posts</h3>

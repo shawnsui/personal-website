@@ -1,13 +1,24 @@
-- title: home
+- title: Home
   url: /
   external: false
-# - title: archive
+
+- title: Books
+  url: /books/
+  external: false
+
+- title: Blog
+  url: /blog/
+  external: false
+# - title: Github
+#   url: https://github.com/shawnsui
+#   external: true
+# - title: Email
+#   url: mailto:{{site.author.email}}
+#   external: true
+# - title: Archive
 #   url: /archive/
 #   external: false
 # - title: about
 #   url: /about/
 #   external: false # set true if you using external link, see below
 
-- title: github
-  url: https://github.com/shawnsui
-  external: true

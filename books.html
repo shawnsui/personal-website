@@ -1,0 +1,45 @@
+---
+title: Books
+permalink: /books/
+layout: page
+---
+
+<div>
+    <h1>Reading</h1>
+    <div class="book-list">
+    {% assign books = site.posts | where: "category","book" %} 
+    {% assign books_in_progress = site.posts | where: "status","reading"  %}
+        {% for post in books_in_progress limit: 5 %}
+        <div class="book">
+            <a href="{{ post.goodreads }}">
+            <img
+                class="book-cover"
+                src="/assets/img/book-covers/{{ post.image }}"
+                alt="{{post.title}}"
+            />
+            <p class="book-title">{{ post.title | escape }}</p>
+            <p class="book-author">{{ post.book-author | escape }}</p>
+            </a>
+        </div>
+        {% endfor %}
+    </div>
+
+    <h1>Finished</h1>
+    <div class="book-list">
+    {% assign books = site.posts | where: "category","book" %} 
+    {% assign books_in_progress = site.posts | where: "status","done"  %}
+    <ul class="finished-book-list">
+        {% for post in books_in_progress limit: 5 %}
+            <li class="finished-book-list-item">
+                <span class="finished-book-date">{{post.finish-date | date: "%B %d, %Y"}}</span>
+                <a href="{{ post.goodreads }}">
+                <div class="finished-book-text">
+                    <span class="finished-book-title">{{ post.title | escape }}</span>
+                    <span class="finished-book-author">{{ post.book-author | escape }}</span>
+                </div>
+                </a>
+            </li>
+            {% endfor %}
+    </ul>    
+    </div>
+</div>

@@ -289,6 +289,32 @@
   }
 }
 
+.finished-book-list {
+  list-style: none;
+}
+
+.finished-book-date {
+  text-align: right;
+  margin-right: 5rem;
+  width: 10rem;
+}
+
+.finished-book-list-item {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 1rem;
+}
+
+.finished-book-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.finished-book-title {
+  margin-bottom: 0;
+  font-weight: bold;
+}
+
 // Footer
 .footer {
   margin-top: 8em;
